@@ -1,14 +1,9 @@
-<?php
-
-    include_once 'conectar.php';
-
-    $sql_leer = 'select *from wp8y_comments';
-
-    $gset = $pdo->prepare($sql_leer);
-    $gset->execute();
-
-    $resultados = $gset->fetchAll();
-
-    var_dump($resultados);
-
-?>
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>How to put PHP in HTML - Simple Example</title>
+  </head>
+  <body>
+    <h1><?php echo "This message is from server side." ?></h1>
+  </body>
+</html>
